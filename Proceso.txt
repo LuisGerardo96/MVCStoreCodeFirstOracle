@@ -1,0 +1,11 @@
+1.- Configurar conexion oracle - entity (Global.asax,Web.cofig)
+2.- activar migracion y actualizar db
+GLOBAL.ASAX
+
+CORRER PRIMERO CON :
+Database.SetInitializer(new DropCreateDatabaseAlways<MusicStoreEntities>());
+
+Despues 
+PORSTERIORMENTE:
+Database.SetInitializer(new DropCreateDatabaseIfModelChanges<MusicStoreEntities>());
+
